@@ -443,7 +443,7 @@ const UserDashboard = () => {
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35 }}
-          className="rounded-[28px] px-5  pt-8 mt-2 pb-7 text-white  mx-0 sm:mx-2"
+          className=" px-5  pt-8 mt- pb-7 text-white  -mx-1 sm:mx- rounded-b-2xl"
           style={{ background: 'linear-gradient(160deg, #11433F 0%, #0C2F2C 100%)' }}
         >
           <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-teal-200/80">

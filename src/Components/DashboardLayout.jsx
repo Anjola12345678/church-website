@@ -675,11 +675,6 @@ const DashboardLayout = ({ children }) => {
       </motion.header>
 
       {/* 3. Sidebar — static column on desktop, animated slide-in drawer on mobile */}
-      {/* <motion.aside
-        animate={{ x: isDesktop || isOpen ? 0 : -SIDEBAR_WIDTH }}
-        transition={{ type: 'spring', stiffness: 320, damping: 32 }}
-        className="fixed inset-y-0 left-0 z-50 w-64 bg-[#0F3B39] text-teal-900 shadow-xl flex flex-col shrink-0 md:static"
-      > */}
       <motion.aside
   variants={sidebarVariants}
   animate={isDesktop ? 'desktop' : (isOpen ? 'open' : 'closed')}
@@ -751,7 +746,7 @@ const DashboardLayout = ({ children }) => {
       </motion.aside>
 
       {/* 4. Main Content — themed so every page shifts with the app-wide theme */}
-      <main className={`grow overflow-y-auto p- pb-24 md:pb-4 transition-colors ${theme.pageBg} ${theme.text}`}>
+      <main className={`grow overflow-y-auto pb-24 md:pb-4 transition-colors ${theme.pageBg} ${theme.text}`}>
         {children}
       </main>
 
