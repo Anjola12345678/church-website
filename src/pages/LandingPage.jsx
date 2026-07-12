@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import { useState, useEffect, useRef, useCallback } from "react";
 import logos from './images/logos.png';
 import { Link } from "react-router-dom";
@@ -86,22 +80,12 @@ const C = {
   bg:         "#f9fafb",
 };
 
-/* ------------------------------------------------------------------ */
-/*  About — mixed image/video scroller                                 */
-/*  Swap the `src` (and `poster` for videos) values for your own       */
-/*  media. `type: "video"` items autoplay (muted) once ~65% of the     */
-/*  card is on screen, and pause the moment it scrolls away. Native    */
-/*  <video controls> still gives the user play/pause/volume/seek.      */
-/* ------------------------------------------------------------------ */
-
-
-
 const ABOUT_MEDIA = [
   { type: "image", src: image1, caption: "Tuesday Digging Deep" },
   { type: "video", src: video1, caption: "Ministration Highlight" },
   { type: "image", src: image2, caption: "Chapel of Praise" },
   { type: "image", src: image3, caption: "Sunday Sermon" },
-  { type: "image", src: image4, caption: "" },
+  { type: "image", src: image4, caption: "Open Heavens" },
   { type: "video", src: video2, caption: "Ministration Highlight" },
   { type: "image", src: image5, caption: "Sunday School" },
   { type: "image", src: image6, caption: "Faithful Women" },
@@ -477,15 +461,15 @@ export default function Landing() {
         background:`linear-gradient(135deg, ${C.heroFrom} 0%, ${C.heroMid} 55%, ${C.heroTo} 100%)`,
         paddingTop:68, minHeight:"100vh", display:"flex", alignItems:"center",
       }}>
-        <div style={{ maxWidth:1200, margin:"0 auto", padding:"80px 24px", width:"100%" }}>
+        <div style={{ maxWidth:1200, margin:"0 auto", padding:"0px 24px", width:"100%" }}>
           <div className="hero-grid" style={{ display:"flex", alignItems:"center", gap:60, justifyContent:"space-between" }}>
 
             {/* Left */}
-            <div className="hero-text" style={{ flex:"1 1 500px", maxWidth:600 }}>
+            <div className="hero-text " style={{ flex:"1 1 500px", maxWidth:600 }}>
               {/* Church badge */}
-              <div style={{ display:"inline-flex", alignItems:"center", gap:10, background:"rgba(255,255,255,.12)", border:"1px solid rgba(255,255,255,.25)", borderRadius:100, padding:"7px 18px", marginBottom:26 }}>
-                <img src={logos} alt="Church Logo" className="w-5 h-5" />
-                <span style={{ fontSize:13, color:"rgba(255,255,255,.9)", fontWeight:600 }}>Chapel of Praise — RCCG Parish</span>
+              <div  style={{ display:"inline-flex", alignItems:"center", gap:10, background:"rgba(255,255,255,.12)", border:"1px solid rgba(255,255,255,.25)", borderRadius:100, padding:"7px 18px", marginBottom:26 }}>
+                <img src={logos} alt="Church Logo" className="w-10 h-10" />
+                <span style={{ fontSize:15, color:"rgba(255,255,255,.9)", fontWeight:600 }}>Chapel of Praise — RCCG Parish</span>
               </div>
 
               <h1 className="hero-h1" style={{ fontSize:52, fontWeight:800, color:"#fff", lineHeight:1.14, letterSpacing:"-1px", marginBottom:20 }}>
@@ -689,7 +673,7 @@ export default function Landing() {
               <p style={{ color:"#9ca3af", fontSize:14, lineHeight:1.7, maxWidth:280 }}>
                 Nigeria's most connected church platform. Access sermons, the Bible, prayer requests, and more — all in one place.
               </p>
-              <div style={{ marginTop:20, color:"#6b7280", fontSize:13 }}>Lagos, Nigeria</div>
+              <div style={{ marginTop:20, color:"#6b7280", fontSize:13 }}>8, Oloyede Street, Ndike, Obawole, Lagos, Nigeria.</div>
               <div style={{ color:"#6b7280", fontSize:13 }}>support@chapelofpraise.ng</div>
             </div>
 
