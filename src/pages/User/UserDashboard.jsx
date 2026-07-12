@@ -437,7 +437,7 @@ const UserDashboard = () => {
 
   return (
     <div className={`min-h-screen transition-colors ${theme.pageBg}`}>
-      <div className="mx-auto max-w-sm">
+      <div className="mx-auto max-w-">
         {/* ---------------- Greeting header ---------------- */}
         <motion.div
           initial={{ opacity: 0, y: -8 }}
