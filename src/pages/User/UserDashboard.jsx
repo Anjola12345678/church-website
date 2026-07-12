@@ -437,13 +437,13 @@ const UserDashboard = () => {
 
   return (
     <div className={`min-h-screen transition-colors ${theme.pageBg}`}>
-      <div className="mx-auto max-w-">
+      <div className="mx-auto max-w-sm">
         {/* ---------------- Greeting header ---------------- */}
         <motion.div
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35 }}
-          className="rounded-[28px] px-5 pt-8 mt-2 pb-7 text-white mx-2"
+          className="rounded-[28px] px-5  pt-8 mt-2 pb-7 text-white  mx-0 sm:mx-2"
           style={{ background: 'linear-gradient(160deg, #11433F 0%, #0C2F2C 100%)' }}
         >
           <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-teal-200/80">
