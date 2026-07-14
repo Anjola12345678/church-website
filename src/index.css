@@ -37,3 +37,20 @@
 .backface-hidden { backface-visibility: hidden; }
 .rotate-y-180 { transform: rotateY(180deg); }
 .transition-transform { transition: transform 0.6s ease; }
+
+
+@layer base {
+  html, body {
+    /* Set this to the SAME color as your meta tag above */
+    background-color: #0b0e14; 
+    
+    /* Removes the white bounce effect */
+    overscroll-behavior: none;
+    
+    /* Removes horizontal white space */
+    overflow-x: hidden;
+    
+    margin: 0;
+    padding: 0;
+  }
+}
