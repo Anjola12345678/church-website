@@ -16,6 +16,16 @@
   }
 }
 
+html, body {
+  background-color: #ffffff;
+  margin: 0;
+}
+.header {
+  padding-top: env(safe-area-inset-top);
+  background-color: #0d2b26;
+}
+
+
 .animate-bounce-slow {
   animation: bounce-slow 2s ease-in-out infinite;
 }

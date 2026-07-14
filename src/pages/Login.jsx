@@ -80,7 +80,7 @@ const handleLogin = async (e) => {
   };
 
   return (
-    <div className=" flex flex-col items-center justify-center p-2">
+    <div className=" flex flex-col items-center justify-center p-2 bg-white">
       <div className="w-full max-w-md bg-white px-6 rounded-lg">
         <div className="flex justify-center mb-0">
            <img src={logo} alt="Logo" className="w-40 h-40 object-contain" />
