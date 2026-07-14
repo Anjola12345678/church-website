@@ -122,48 +122,12 @@ const UserDashboard = () => {
 
   return (
     <div className={`min-h-screen transition-colors ${theme.pageBg}`}>
-      {/* <div className="mx-auto max-w-sm"> */}
         {/* ---------------- Greeting header ---------------- */}
         {/* <motion.div
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35 }}
-          className=" px-5  pt-8 mt- pb-7 text-white  -mx-1 sm:mx- rounded-b-2xl"
-          style={{ background: 'linear-gradient(160deg, #11433F 0%, #0C2F2C 100%)' }}
-        >
-          <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-teal-200/80">
-            Peace Be With You
-          </p>
-         
-        
-          <h1 className="mt-1 text-[26px] font-bold leading-tight">
-            Good Morning,
-            <br />
-            {userName}
-          </h1>
-
-
-          <div className="mt-5 rounded-2xl bg-white/10 px-4 py-3.5 backdrop-blur-sm">
-            <p className="text-[13px] italic leading-relaxed text-white/90">
-              <span className="mr-1 text-teal-300">"</span>
-              The Lord is my shepherd; I shall not want.
-              <span className="ml-1 text-teal-300">"</span>
-            </p>
-            <p className="mt-1.5 text-right text-[11px] font-semibold text-teal-200/80">
-              — Psalm 23:1
-            </p>
-          </div>
-        </motion.div> */}
-        <motion.div
   initial={{ opacity: 0, y: -8 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.35 }}
-  /* w-screen: forces full width of the viewport
-     -mx-5: compensates if your parent container has 'px-5' padding 
-            (remove this if your parent doesn't have padding)
-     rounded-b-2xl: keeps the bottom rounded
-  */
-className="relative w-full left-0 right-0 px-5 pt-8 mt-0 pb-7 text-white rounded-b-2xl"
+className="relative w-full left-0 right-0 px-5 pt-8 mt-0 pb-7 text-white "
   style={{ background: 'linear-gradient(160deg, #11433F 0%, #0C2F2C 100%)' }}
 >
   <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-teal-200/80">
@@ -186,7 +150,40 @@ className="relative w-full left-0 right-0 px-5 pt-8 mt-0 pb-7 text-white rounded
       — Psalm 23:1
     </p>
   </div>
+</motion.div> */}
+
+
+
+<motion.div
+  initial={{ opacity: 0, y: -8 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.35 }}
+  className="relative w-full left-0 right-0 px-5 pt-8 mt-0 pb-7 bg-mist-100  shadow-[0_8px_24px_-4px_rgba(15,59,57,0.12)]"
+>
+  <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-teal-700/70">
+    Peace Be With You
+  </p>
+
+  <h1 className="mt-1 text-[26px] font-bold leading-tight text-[#0F3B39]">
+    Good Morning,
+    <br />
+    {userName}
+  </h1>
+
+  <div className="mt-5 rounded-2xl  bg-teal-900 text-white px-4 py-3.5 border border-[#0F3B39]/10">
+    <p className="text-[13px] italic leading-relaxed ">
+      <span className="mr-1 text-white">"</span>
+      The Lord is my shepherd; I shall not want.
+      <span className="ml-1 text-white">"</span>
+    </p>
+    <p className="mt-1.5 text-right text-[11px] font-semibold text-white">
+      — Psalm 23:1
+    </p>
+  </div>
 </motion.div>
+
+
+
 
         {/* ---------------- Quick Actions ---------------- */}
         <motion.div
@@ -323,10 +320,10 @@ className="relative w-full left-0 right-0 px-5 pt-8 mt-0 pb-7 text-white rounded
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, delay: 0.26 }}
-          className="px-5 pb-0 pt-2 -mb-5"
+          className="px-5 pb-0 pt-2 mb-23 "
         >
-          <div className={`flex flex-col items-center gap-3 border-t pt-6 text-center ${theme.border}`}>
-            <p className={`text-[12px] font-medium italic ${theme.subText}`}>
+          <div className={`flex flex-col items-center gap-3 text-center ${theme.border} `}>
+            <p className={`text-[12px] font-medium italic ${theme.subText} text-black`}>
               "Where two or three gather in my name, there am I in the midst of them."
             </p>
             <p className={`text-[10px] font-semibold uppercase tracking-[0.14em] ${theme.subText}`}>
