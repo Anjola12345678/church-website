@@ -208,7 +208,7 @@ const DashboardLayout = ({ children }) => {
         initial={{ y: -60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.35, ease: 'easeOut' }}
-        className="sticky top-0 z-30 shrink-0 md:hidden shadow-md"
+        className="sticky top-0 z-30 shrink-0 md:hidden shadow-md pt-safe-top"
         style={{ backgroundColor: '#0F3B39' }}
       >
         <div className="flex items-center justify-between px-4 py-3.5">
@@ -258,15 +258,6 @@ const DashboardLayout = ({ children }) => {
                 />
               )}
             </motion.button>
-            {/* <motion.button
-              type="button"
-              onClick={() => setShowLogout(true)}
-              aria-label="Log out"
-              whileTap={{ scale: 0.88 }}
-              className="flex h-9 w-9 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 active:bg-white/10"
-            >
-              <IoLogOutOutline size={22} />
-            </motion.button> */}
           </div>
         </div>
       </motion.header>
@@ -304,18 +295,6 @@ const DashboardLayout = ({ children }) => {
             </NavLink>
           ))}
 
-          {/* Appearance — desktop entry point, since the mobile header icon
-              isn't visible on the static desktop layout's own chrome */}
-          {/* <motion.button
-            whileTap={{ scale: 0.97 }}
-            onClick={(e) => {
-              e.stopPropagation();
-              setShowAppearance(true);
-            }}
-            className="flex w-full items-center gap-4 p-3 hover:bg-teal-900 text-white rounded-lg"
-          >
-            <ThemeIcon size={16} /> Appearance
-          </motion.button> */}
 
           <motion.button
             whileTap={{ scale: 0.97 }}
@@ -343,9 +322,6 @@ const DashboardLayout = ({ children }) => {
       </motion.aside>
 
       {/* 4. Main Content — themed so every page shifts with the app-wide theme */}
-      {/* <main className={`grow overflow-y-auto pb-24 md:pb-4 transition-colors ${theme.pageBg} ${theme.text}`}>
-        {children}
-      </main> */}
       <main className={`grow overflow-y-auto ${theme.pageBg} ${theme.text} w-full`}>
   {children}
 </main>
