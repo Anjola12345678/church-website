@@ -662,7 +662,7 @@ const DashboardLayout = ({ children }) => {
   };
 
   return (
-    <div className={`h-screen flex flex-col md:flex-row overflow-hidden transition-colors ${theme.pageBg}`}>
+    <div className={`h-dvh flex flex-col md:flex-row overflow-hidden transition-colors ${theme.pageBg}`}>
 
       {/* 1. Backdrop Overlay (mobile only, fades in/out with the sidebar) */}
       <AnimatePresence>
@@ -795,7 +795,9 @@ const DashboardLayout = ({ children }) => {
       </motion.aside>
 
       {/* 4. Main Content — themed so every page shifts with the app-wide theme */}
-      <main className={`grow overflow-y-auto ${theme.pageBg} ${theme.text} w-full`}>
+      <main className={`grow overflow-y-auto ${theme.pageBg} ${theme.text} w-full`}
+      style={{ WebkitOverflowScrolling: 'touch', overscrollBehaviorY: 'contain' }}
+      >
         {children}
       </main>
 
