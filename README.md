@@ -1,16 +1,14 @@
-# React + Vite
+# Church Community & Engagement Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
+A centralized web application designed to streamline community communication and engagement. The platform serves as a digital hub for church members, featuring integrated sermon archives, interactive quiz modules, and automated event updates to keep the congregation connected.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
+- **Frontend:** React, Tailwind CSS
+- **Backend/Database:** Firebase (Authentication & Firestore)
+- **Deployment:** Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💻 How to Run Locally
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Anjola12345678/church-website.git](https://github.com/Anjola12345678/church-website.git)
